@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @RestController
@@ -32,8 +33,10 @@ public class PersonController {
 
     @PostMapping
     public ResponseEntity<Person> createPerson(@Valid @RequestBody Person person) {
+        if (Objects.isNull(person)){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
 
-//        return new ResponseEntity<>(personService.createPerson(person), HttpStatus.CREATED);
         return ResponseEntity.status(HttpStatus.CREATED).body(personService.createPerson(person));
     }
 

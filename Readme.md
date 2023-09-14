@@ -54,8 +54,8 @@ The published documentation of the expected requests and response can be found i
 <b style="color:yellow">CREATE</b> a new user
 
 # Example request:
-
-curl --location 'http://localhost:8080/api' \
+```bash
+curl --location --request POST 'http://localhost:8080/api' \
 --data '{
 "name": "Funke"
 }'
@@ -64,11 +64,12 @@ curl --location 'http://localhost:8080/api' \
 "id": 22,
 "name": "Funke"
 }
+```
 
 <b style="color:green">GET</b> user by id
-
+```bash
 # Example request:
-curl --location 'http://localhost:8080/api/22' \
+curl --location --request GET 'http://localhost:8080/api/22' \
 --data ''
 
 # Example response:
@@ -76,12 +77,12 @@ curl --location 'http://localhost:8080/api/22' \
 "id": 22,
 "name": "Funke"
 }
-
+```
 
 <b style="color:blue">UPDATE</b> user by id
-
+```bash
 # Example request:
-curl --location 'http://localhost:8080/api/22' \
+curl --location --request POST 'http://localhost:8080/api/22' \
 --data '{
 "name": "bolu"
 }'
@@ -92,14 +93,17 @@ curl --location 'http://localhost:8080/api/22' \
 "message": "bolu",
 "timeStamp": "17:14:52.255204700"
 }
+```
 
 <b style="color:red">DELETE</b> user by id
+```bash
 # Example request:
 curl --location --request DELETE 'http://localhost:8080/api/22' \
 --data ''
 
 # Example response:
 Deleted user successfully
+```
 
 ## The API
 https://stage-two-8z5b.onrender.com

@@ -17,6 +17,9 @@ public class PersonService {
     PersonRepo personRepo;
 
     public Person createPerson(Person person) {
+        if (Objects.isNull(person)){
+            return null;
+        }
 
         return personRepo.save(person);
     }
