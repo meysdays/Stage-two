@@ -1,0 +1,110 @@
+{
+	"id": "3f3ef3c9-cc0a-44ac-80c4-d13232f0115e",
+	"name": "Stage-two",
+	"timestamp": "2023-09-14T15:40:14.092Z",
+	"collection_id": "27935491-0a9d7d18-6d78-40a7-813a-cd112a5905f5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-14T15:40:13.215Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "19b794d7-78b1-47db-94da-e6a904b20395",
+			"name": "createUser",
+			"url": "http://localhost:8080/api",
+			"time": 56,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				56
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7c9f85c4-44ac-4a05-be30-922b63a9d861",
+			"name": "getById",
+			"url": "http://localhost:8080/api/18",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8c6a5b5f-1d85-471f-8b1b-5adcaa7f4cab",
+			"name": "updateUser",
+			"url": "http://localhost:8080/api/18",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				45
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "322aaa72-b881-40bb-8019-6fa3aae855f7",
+			"name": "deleteUser",
+			"url": "http://localhost:8080/api/18",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				26
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 139,
+	"collection": {
+		"requests": [
+			{
+				"id": "19b794d7-78b1-47db-94da-e6a904b20395",
+				"method": "POST"
+			},
+			{
+				"id": "7c9f85c4-44ac-4a05-be30-922b63a9d861",
+				"method": "GET"
+			},
+			{
+				"id": "8c6a5b5f-1d85-471f-8b1b-5adcaa7f4cab",
+				"method": "POST"
+			},
+			{
+				"id": "322aaa72-b881-40bb-8019-6fa3aae855f7",
+				"method": "DELETE"
+			}
+		]
+	}
+}
