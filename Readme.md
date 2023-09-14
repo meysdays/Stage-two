@@ -28,7 +28,7 @@ Get a copy of this repo by using the git clone command.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/meysdays/hng.git
+   git clone https://github.com/meysdays/Stage-two.git
 
 2. Build the project using Maven:
    ```bash
