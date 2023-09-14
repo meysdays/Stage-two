@@ -51,6 +51,56 @@ This application was deployed on Render.
 Postman was used for testing of this application, which the collection was tested. Check the json file "Stage-two.postman_test_run.json" to see the results.
 The published documentation of the expected requests and response can be found in this link: https://documenter.getpostman.com/view/27935491/2s9YC5xXVj
 
+<b style="color:yellow">CREATE</b> a new user
+
+# Example request:
+
+curl --location 'http://localhost:8080/api' \
+--data '{
+"name": "Funke"
+}'
+# Example response:
+{
+"id": 22,
+"name": "Funke"
+}
+
+<b style="color:green">GET</b> user by id
+
+# Example request:
+curl --location 'http://localhost:8080/api/22' \
+--data ''
+
+# Example response:
+{
+"id": 22,
+"name": "Funke"
+}
+
+
+<b style="color:blue">UPDATE</b> user by id
+
+# Example request:
+curl --location 'http://localhost:8080/api/22' \
+--data '{
+"name": "bolu"
+}'
+
+# Example response:
+{
+"id": 22,
+"message": "bolu",
+"timeStamp": "17:14:52.255204700"
+}
+
+<b style="color:red">DELETE</b> user by id
+# Example request:
+curl --location --request DELETE 'http://localhost:8080/api/22' \
+--data ''
+
+# Example response:
+Deleted user successfully
+
 ## The API
 https://github.com/meysdays/Stage-two
 
