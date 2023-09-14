@@ -15,7 +15,7 @@ public class Person {
     @Column(name = "first_name")
     @NotBlank(message = "Enter your name")
     @NotNull
-    @Pattern(regexp = "^[A-Za-z]+$", message = "Error! Only alphabetic characrters are allowed")
+    @Pattern(regexp = "^[A-Za-z\\s]+$", message = "Error! Only alphabetic characrters are allowed")
     private String name;
 
     public Long getId() {
