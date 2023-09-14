@@ -102,5 +102,4 @@ curl --location --request DELETE 'http://localhost:8080/api/22' \
 Deleted user successfully
 
 ## The API
-https://github.com/meysdays/Stage-two
-
+https://stage-two-8z5b.onrender.com
