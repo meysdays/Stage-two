@@ -55,7 +55,7 @@ The published documentation of the expected requests and response can be found i
 
 # Example request:
 ```bash
-curl --location --request POST 'http://localhost:8080/api' \
+curl --request POST 'http://localhost:8080/api' \
 --data '{
 "name": "Funke"
 }'
@@ -69,7 +69,7 @@ curl --location --request POST 'http://localhost:8080/api' \
 <b style="color:green">GET</b> user by id
 ```bash
 # Example request:
-curl --location --request GET 'http://localhost:8080/api/22' \
+curl --request GET 'http://localhost:8080/api/22' \
 --data ''
 
 # Example response:
@@ -82,7 +82,7 @@ curl --location --request GET 'http://localhost:8080/api/22' \
 <b style="color:blue">UPDATE</b> user by id
 ```bash
 # Example request:
-curl --location --request POST 'http://localhost:8080/api/22' \
+curl --request POST 'http://localhost:8080/api/22' \
 --data '{
 "name": "bolu"
 }'
@@ -98,7 +98,7 @@ curl --location --request POST 'http://localhost:8080/api/22' \
 <b style="color:red">DELETE</b> user by id
 ```bash
 # Example request:
-curl --location --request DELETE 'http://localhost:8080/api/22' \
+curl --request DELETE 'http://localhost:8080/api/22' \
 --data ''
 
 # Example response:
